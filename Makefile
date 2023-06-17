@@ -19,7 +19,7 @@ install: $(service_dir) fastapi.service
 
 	@echo Installing configuration files...
 	mkdir -p $(conf_dir)
-	@echo cp configuration.json $(conf_dir)
+	cp configuration.json $(conf_dir)
 	chown root:root $(conf_dir)/*
 	chmod 644 $(conf_dir)/*
 
