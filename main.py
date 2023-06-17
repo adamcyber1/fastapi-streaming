@@ -22,6 +22,10 @@ def fake_data_streamer():
 async def main():
     return StreamingResponse(fake_data_streamer(), media_type='application/x-ndjson')
 
+@app.get("/hello")
+async def root():
+    return {"message": "Hello World"}
+
 
 
 
