@@ -20,6 +20,7 @@ def fake_data_streamer():
 
 @app.get("/")
 async def root():
+    print("Received a request on /")
     return {"message": "Hello World"}
 @app.get('/stream')
 async def main():
